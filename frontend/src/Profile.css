@@ -1,0 +1,406 @@
+/* Main Container Styling */
+main.column {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  main.column h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Error & Loading Messages */
+  main.column p {
+    font-size: 16px;
+    color: #000000; /* Red for errors */
+    font-weight: 900;
+  }
+  
+  /* Loading State */
+  main.column p:has(> .loading) {
+    color: #007bff; /* Blue for loading */
+  }
+  
+  /* Buttons Alignment */
+  main.column button {
+    margin: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main.column {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    main.column h1 {
+      font-size: 24px;
+    }
+  
+    main.column button {
+      width: 100%;
+    }
+  }
+  
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    /* background: linear-gradient(135deg, #00c6ff, #0072ff); */
+    padding: 20px;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: #fff;
+    opacity: .9px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #0072ff;
+  }
+  
+  /* Profile Name */
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  .profile-details li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .profile-details li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Custom Button */
+  .btn-custom {
+    background: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    color: white;
+    width: 70%;
+  }
+  
+  .btn-custom:hover {
+    background: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .profile-card {
+      padding: 15px;
+    }
+  
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-name {
+      font-size: 20px;
+    }
+  
+    .profile-details li {
+      font-size: 12px;
+    }
+  
+    .btn-custom {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+
+  /* Log Out Button Styling */
+.logout-button {
+    background: #dc3545; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 70%;
+    max-width: 100px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .logout-button:hover {
+    background: #c82333; /* Darker red on hover */
+  }
+  
+  .logout-button:active {
+    transform: scale(0.98); /* Slight press effect */
+  }
+  
+  /* Mobile Friendly */
+  @media (max-width: 480px) {
+    .logout-button {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Log In Button Styling */
+.login-button {
+    background: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 70%;
+    max-width: 100px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .login-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+  }
+  
+  .login-button:active {
+    transform: scale(0.98); /* Slight press effect */
+  }
+  
+  /* Mobile Friendly */
+  @media (max-width: 480px) {
+    .login-button {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
+
+  /* Styling for list items */
+li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 50;
+    color: #0bebc2;
+    background: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 8px 1px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Key styling */
+  li strong {
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    li {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+  }
+  .user-card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #ffffff;
+     border-radius: 10px;
+     padding: 40px;
+     width: 650px;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+ }
+  
+ .user-card:before {
+    content: '';
+    position: absolute;
+    height: 300%;
+    width: 173px;
+    background: #39b3f9;
+    top: -60px;
+    left: -125px;
+    z-index: 0;
+    transform: rotate(17deg);
+  }
+  
+  .user-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    z-index: 3;
+  }
+  
+  .user-card-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+        border-radius: 50%;
+  }
+  
+  .user-card-info {
+    text-align: center;
+  }
+  
+  .user-card-info h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+  }
+  
+  .user-card-info p {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .user-card-info p span {
+     font-weight: 700;
+     margin-right: 10px;
+ }
+  @media only screen and (min-width: 768px) {
+    .user-card {
+      flex-direction: row;
+      align-items: flex-start;
+    }   
+    .user-card-img {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .user-card-info {
+      text-align: left;
+    }
+  }
+ 
+  @media (max-width: 767px){
+    .wrapper{
+       padding-top: 3%;
+    }
+    .user-card:before {
+       width: 300%;
+       height: 200px;
+       transform: rotate(0);
+    }
+    .user-card-info h2 {
+       margin-top: 25px;
+       font-size: 35px;
+    }
+    .user-card-info p span {
+       display: block;
+       margin-bottom: 15px;
+       font-size: 18px;
+    }
+  }
+  /* User Info Container */
+
+
+/* User Name */
+.user-card-info h2 {
+  font-size: 22px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* User Info Paragraphs */
+.user-card-info p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* Highlight the Labels */
+.user-card-info p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-card-info {
+    padding: 10px;
+  }
+
+  .user-card-info h2 {
+    font-size: 20px;
+  }
+
+  .user-card-info p {
+    font-size: 14px;
+  }
+}
+/* Default user initials container */
+.user-initial {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes it circular */
+    text-transform: uppercase;
+  }
+  
